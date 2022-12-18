@@ -1,20 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
+import React from 'react'
+import { Text, View } from 'react-native'
+import { StackNavigator } from './src/navigator/StackNavigator';
+import { MenuLateralBasico } from './src/navigator/MenuLateralBasico';
+import { MenuLateral } from './src/navigator/MenuLateral';
+import { Tabs } from './src/navigator/Tabs';
 
-export default function App() {
+export const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    <NavigationContainer>
+      {/* <StackNavigator/> */}
+      {/* <MenuLateralBasico/> */}
+      <MenuLateral/>
+      {/* <Tabs/> */}
+    </NavigationContainer>
+  )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
