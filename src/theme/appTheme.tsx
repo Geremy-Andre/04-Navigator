@@ -45,5 +45,12 @@ export const styles = StyleSheet.create({
     },
     menuTexto: {
         fontSize: 20,
-    }
+    },
+    // tareaTexto: {
+    //     marginTop: 470,
+    //     fontSize: 20,
+    //     paddingLeft: 10,
+    //     color: 'red',
+    //     fontWeight: 'bold',
+    // },
 });

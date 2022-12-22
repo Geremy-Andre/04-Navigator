@@ -55,6 +55,7 @@ const MenuInterno = ({navigation}: DrawerContentComponentProps) => {
           <Text style= {styles.menuTexto}>Ajustes</Text>
         </TouchableOpacity>
       </View>
+      {/* <Text style= {styles.tareaTexto}>@Geremy170430Cova</Text> */}
     </DrawerContentScrollView>
   )
 }
