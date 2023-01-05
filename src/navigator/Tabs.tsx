@@ -24,7 +24,7 @@ export const Tabs = () => {
             borderTopColor: colores.primary,
             borderTopWidth: 0,
             elevation: 0,
-            backgroundColor: colores.primary
+            backgroundColor: colores.primary,
           },
           tabBarLabelStyle:{
             fontSize: 15,
