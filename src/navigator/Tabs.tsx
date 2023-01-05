@@ -7,6 +7,7 @@ import { TopTapNavigator } from './TopTapNavigator';
 import { StackNavigator } from './StackNavigator';
 import { colores } from '../theme/appTheme';
 import { Text } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 // export const Tabs
 
@@ -35,16 +36,18 @@ export const Tabs = () => {
             let iconName: string = '';
             switch (route.name) {
               case 'Tab1Screen':
-                iconName= 'T1'
+                iconName= 'pricetags-outline'
                 break;
               case 'Tab2Screen':
-                iconName= 'T2'
+                iconName= 'bookmarks-outline'
                 break;
               case 'StackNavigator':
-                iconName= 'SN'
+                iconName= 'aperture-outline'
                 break;
             }
-            return <Text style={{color}}>{iconName}</Text>
+            return <Text style={{color}}>
+                      <Icon name={iconName} size={25} color='white'/>
+                    </Text>
             
           }
       })}
